@@ -35,14 +35,12 @@ class _MyHomePageState extends State<MyHomePage> {
   int _selectedIndex = 0;
   String _display = "Home";
 
-  // Fonction appelée quand on appuie sur le bouton like
   void _likethis() {
     setState(() {
       _isLiked = !_isLiked;
     });
   }
 
-  // Fonction appelée quand on clique sur un onglet de la BottomNavigationBar
   void _onItemTapped(int index) {
     setState(() {
       _selectedIndex = index;
